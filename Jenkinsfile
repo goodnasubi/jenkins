@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('start') {
       steps {
-        sh '''echo hellow jenkins !!
+        sh '''echo "hellow jenkins !!"
 '''
       }
     }

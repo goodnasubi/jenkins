@@ -1,0 +1,6 @@
+services:
+  alma9:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: alma9

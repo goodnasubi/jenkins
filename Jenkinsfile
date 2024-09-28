@@ -1,12 +1,19 @@
 pipeline {
   agent any
   stages {
-    stage('start') {
+    stage('hello') {
       steps {
-        sh '''echo "hellow jenkins !!"
-'''
+        sh '''#!/bin/bash -xe
+        echo "hellow jenkins !!"
+        '''
       }
     }
-
+    stage('build_test') {
+      steps {
+        sh '''#!/bin/bash -xe
+        . ./build_test.sh
+        '''
+      }
+    }
   }
 }

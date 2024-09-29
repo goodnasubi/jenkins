@@ -2,4 +2,4 @@
 
 pwd
 docker compose build
-docker compose run --rm alma9 ls -lat && cat /etc/resolve.conf
+docker compose run --rm alma9 ls -lat && ls -la /etc

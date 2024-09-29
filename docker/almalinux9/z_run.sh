@@ -2,4 +2,4 @@
 
 pwd
 docker compose build
-docker compose run --rm alma9 ls -lat
+docker compose run --rm alma9 ls -lat && cat .dockerenv
